@@ -17,6 +17,7 @@
 		2200F3532382531000615764 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F3522382531000615764 /* Constants.swift */; };
 		2200F356238282A300615764 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F355238282A300615764 /* WeatherResult.swift */; };
 		2200F35B238284DF00615764 /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F35A238284DF00615764 /* URLRequest+Extensions.swift */; };
+		2200F35D23828D4700615764 /* URL+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F35C23828D4700615764 /* URL+Extensions.swift */; };
 		493145ECB2788DB665863344 /* Pods_GoodWeather_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D9CE15789D6E647892EC3C /* Pods_GoodWeather_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		2200F3522382531000615764 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2200F355238282A300615764 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
 		2200F35A238284DF00615764 /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
+		2200F35C23828D4700615764 /* URL+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Extensions.swift"; sourceTree = "<group>"; };
 		47D9CE15789D6E647892EC3C /* Pods_GoodWeather_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodWeather_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B50F069FD0D8983C5DB9D69 /* Pods-GoodWeather_RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWeather_RxSwift.release.xcconfig"; path = "Target Support Files/Pods-GoodWeather_RxSwift/Pods-GoodWeather_RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		BDC17F01A75DA715B9E6289C /* Pods-GoodWeather_RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWeather_RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-GoodWeather_RxSwift/Pods-GoodWeather_RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				2200F35A238284DF00615764 /* URLRequest+Extensions.swift */,
+				2200F35C23828D4700615764 /* URL+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				2200F3532382531000615764 /* Constants.swift in Sources */,
 				2200F356238282A300615764 /* WeatherResult.swift in Sources */,
 				2200F35B238284DF00615764 /* URLRequest+Extensions.swift in Sources */,
+				2200F35D23828D4700615764 /* URL+Extensions.swift in Sources */,
 				2200F346238251BE00615764 /* GoodWeather_RxSwift.xcdatamodeld in Sources */,
 				2200F33E238251BE00615764 /* SceneDelegate.swift in Sources */,
 			);
