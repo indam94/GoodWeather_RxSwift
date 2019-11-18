@@ -16,6 +16,7 @@
 		2200F34B238251C000615764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2200F349238251C000615764 /* LaunchScreen.storyboard */; };
 		2200F3532382531000615764 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F3522382531000615764 /* Constants.swift */; };
 		2200F356238282A300615764 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F355238282A300615764 /* WeatherResult.swift */; };
+		493145ECB2788DB665863344 /* Pods_GoodWeather_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D9CE15789D6E647892EC3C /* Pods_GoodWeather_RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,9 @@
 		2200F34C238251C000615764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2200F3522382531000615764 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2200F355238282A300615764 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
+		47D9CE15789D6E647892EC3C /* Pods_GoodWeather_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoodWeather_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B50F069FD0D8983C5DB9D69 /* Pods-GoodWeather_RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWeather_RxSwift.release.xcconfig"; path = "Target Support Files/Pods-GoodWeather_RxSwift/Pods-GoodWeather_RxSwift.release.xcconfig"; sourceTree = "<group>"; };
+		BDC17F01A75DA715B9E6289C /* Pods-GoodWeather_RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodWeather_RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-GoodWeather_RxSwift/Pods-GoodWeather_RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				493145ECB2788DB665863344 /* Pods_GoodWeather_RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		12F163F3D629FE5C6F7949A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDC17F01A75DA715B9E6289C /* Pods-GoodWeather_RxSwift.debug.xcconfig */,
+				7B50F069FD0D8983C5DB9D69 /* Pods-GoodWeather_RxSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2200F32F238251BE00615764 = {
 			isa = PBXGroup;
 			children = (
 				2200F33A238251BE00615764 /* GoodWeather_RxSwift */,
 				2200F339238251BE00615764 /* Products */,
+				12F163F3D629FE5C6F7949A8 /* Pods */,
+				CA237F1E4C66595781249B1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +101,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		CA237F1E4C66595781249B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D9CE15789D6E647892EC3C /* Pods_GoodWeather_RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2200F34F238251C000615764 /* Build configuration list for PBXNativeTarget "GoodWeather_RxSwift" */;
 			buildPhases = (
+				6EB997FFCEF50FA39464B1C1 /* [CP] Check Pods Manifest.lock */,
 				2200F334238251BE00615764 /* Sources */,
 				2200F335238251BE00615764 /* Frameworks */,
 				2200F336238251BE00615764 /* Resources */,
+				397ECEB8EDA17EA989AECC6F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +176,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397ECEB8EDA17EA989AECC6F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoodWeather_RxSwift/Pods-GoodWeather_RxSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoodWeather_RxSwift/Pods-GoodWeather_RxSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EB997FFCEF50FA39464B1C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoodWeather_RxSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2200F334238251BE00615764 /* Sources */ = {
@@ -302,6 +378,7 @@
 		};
 		2200F350238251C000615764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDC17F01A75DA715B9E6289C /* Pods-GoodWeather_RxSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -320,6 +397,7 @@
 		};
 		2200F351238251C000615764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B50F069FD0D8983C5DB9D69 /* Pods-GoodWeather_RxSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
