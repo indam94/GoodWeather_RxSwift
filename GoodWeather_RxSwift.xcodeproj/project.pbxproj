@@ -14,6 +14,7 @@
 		2200F346238251BE00615764 /* GoodWeather_RxSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2200F344238251BE00615764 /* GoodWeather_RxSwift.xcdatamodeld */; };
 		2200F348238251C000615764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2200F347238251C000615764 /* Assets.xcassets */; };
 		2200F34B238251C000615764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2200F349238251C000615764 /* LaunchScreen.storyboard */; };
+		2200F3532382531000615764 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2200F3522382531000615764 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2200F347238251C000615764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2200F34A238251C000615764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2200F34C238251C000615764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2200F3522382531000615764 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2200F349238251C000615764 /* LaunchScreen.storyboard */,
 				2200F34C238251C000615764 /* Info.plist */,
 				2200F344238251BE00615764 /* GoodWeather_RxSwift.xcdatamodeld */,
+				2200F3522382531000615764 /* Constant.swift */,
 			);
 			path = GoodWeather_RxSwift;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				2200F340238251BE00615764 /* ViewController.swift in Sources */,
 				2200F33C238251BE00615764 /* AppDelegate.swift in Sources */,
+				2200F3532382531000615764 /* Constant.swift in Sources */,
 				2200F346238251BE00615764 /* GoodWeather_RxSwift.xcdatamodeld in Sources */,
 				2200F33E238251BE00615764 /* SceneDelegate.swift in Sources */,
 			);
