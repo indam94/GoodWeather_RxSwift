@@ -22,17 +22,29 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.cityNameTextField.rx.value.subscribe(onNext:{ city in
-            
-            if let city = city{
-                if city.isEmpty {
-                    self.displayWeather(nil)
-                }else{
-                    self.fetchWeather(by: city)
+        self.cityNameTextField.rx.controlEvent(.editingDidEndOnExit).asObservable().map{ self.cityNameTextField.text }
+            .subscribe(onNext:{ city in
+                if let city = city{
+                    if city.isEmpty{
+                        self.displayWeather(nil)
+                    }
+                    else{
+                        self.fetchWeather(by: city)
+                    }
                 }
-            }
-            
             }).disposed(by: disposeBag)
+        
+//        self.cityNameTextField.rx.value.subscribe(onNext:{ city in
+//            
+//            if let city = city{
+//                if city.isEmpty {
+//                    self.displayWeather(nil)
+//                }else{
+//                    self.fetchWeather(by: city)
+//                }
+//            }
+//            
+//            }).disposed(by: disposeBag)
         
     }
 
